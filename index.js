@@ -9,11 +9,8 @@ button.addEventListener("click",async function(){
 
     //DOM操作
     users.forEach(function(user) {
-        console.log(user);
+        const list= document.createElement("li");
+        list.innerText="yeah";
+        lists.appendChild(list);    
     });
-    //const list= document.createElement("li");
-    //list.innerText="yeah";
-    //lists.appendChild(list);
-    //console.log(list);
-
 });
