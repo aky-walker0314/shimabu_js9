@@ -7,10 +7,19 @@ button.addEventListener("click",async function(){
     const users = await res.json();
     console.log(users);
 
-    //DOM操作
-    users.forEach(function(user) {
-        const list= document.createElement("li");
-        list.innerText=user.address.zipcode;
-        lists.appendChild(list);    
-    });
+    //users
+for (let index = 0; index < users.length; index++) {
+    const user = users[index];
+    const list= document.createElement("li");
+    list.innerText=user.name;
+    lists.appendChild(list);    
+
+    
+}
+
+    //users.forEach(function(user) {
+        //const list= document.createElement("li");
+        //list.innerText=user.name;
+        //lists.appendChild(list);    
+    //});
 });
