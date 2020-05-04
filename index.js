@@ -2,7 +2,13 @@ const button = document.getElementById("addBtn");
 const lists = document.getElementById("lists");
 
 button.addEventListener("click",async function(){
-    const res =await fetch("https://jsonplaceholder.typicode.com/users");
-    const users = await res.json();
-    console.log(users);
+    //データのやり取り
+    // const res =await fetch("https://jsonplaceholder.typicode.com/users");
+    //const users = await res.json();
+    //console.log(users);
+
+    //DOm操作
+    const list= document.createElement("li");
+    console.log(list);
+
 });
