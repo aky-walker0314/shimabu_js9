@@ -9,6 +9,7 @@ button.addEventListener("click",async function(){
 
     //DOm操作
     const list= document.createElement("li");
+    list.innerText="yeah";
     console.log(list);
 
 });
