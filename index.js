@@ -10,7 +10,7 @@ button.addEventListener("click",async function(){
     //DOM操作
     users.forEach(function(user) {
         const list= document.createElement("li");
-        list.innerText=user.name;
+        list.innerText=user.address.zipcode;
         lists.appendChild(list);    
     });
 });
