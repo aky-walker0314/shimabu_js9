@@ -10,6 +10,7 @@ button.addEventListener("click",async function(){
     //DOm操作
     const list= document.createElement("li");
     list.innerText="yeah";
+    lists.appendChild(list);
     console.log(list);
 
 });
